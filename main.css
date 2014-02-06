@@ -1,0 +1,45 @@
+html, body{margin:0; padding:0; height:100%; width:100%;}
+body{overflow-y:scroll; font-family: arial, sans-serif; font-size: 13px; line-height:27px; background:#eee;  -webkit-font-smoothing: antialiased;}
+/*body{overflow:hidden; font-family:"Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;font-weight:100; font-size: 12px;  line-height:20px;}*/
+
+a{text-decoration: none; color: #0E86EF;display:inline-block;}
+a:hover{margin-top:5px; color: #fff;}
+input, textarea, select{ outline: none; }
+ul{list-style:none;padding:0;margin:0}
+
+#wrapper{min-width:800px; max-width: 900px;height:inherit; margin: 20px auto; padding-bottom: 300px;position:relative;}
+.header{background:#444; position: relative;z-index: 2; padding: 10px; border-bottom:1px solid #000;box-shadow: 0 0 0 2px #fff;}
+.header > div{min-width: 800px; max-width: 900px; margin: 0 auto; color:#999;}
+.footer{ height: 300px;width:100%; text-align: center;background:#fff; border-top:1px solid #ccc;padding-top:20px; color:#999; margin-top: 200px;}
+
+.about_me{height:700px; position: relative; margin: auto; width: 70%}
+
+.leaf_nav{position: absolute; color:#ccc; right: 0px;top:50px; z-index: 2; font-size: 30pt; line-height: 35px;}
+.leaf_nav span{cursor: pointer;}
+.leaf_nav span:hover{color:#333;}
+
+.four_leaf{position: relative; left: 0px;width: 200px; height: 200px; background:#fff;margin-top:200px;}
+.leaf{transform-origin: 0 0; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0;-ms-transform-origin: 0 0;-o-transform-origin: 0 0; background:#eee; width: 200px; height: 200px;position: absolute; border-radius: 0 160px 0 120px; background:#fff; box-shadow: 5px 3px 2px #ddd}
+.leaf p{margin: 20px 40px; color: #999; display:none;}
+.leaf:before{content: "\1405"; position: absolute; color: #eee; left:5px; font-size: 20pt; top: 20px;}
+.leaf h2{margin: 20px 40px; color: #778; display:none;}
+
+.leaf.active{width:700px; border-radius: 0 60px;}
+.leaf.active p, .leaf.active h2{display: block;}
+
+.four_leaf .content{border-radius: 100px; overflow: hidden; height:inherit;}
+.four_leaf .content img{max-width: 100%; }
+/*.four_leaf{transform:rotate(90deg); -ms-transform:rotate(90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(90deg); -o-transform:rotate(90deg);}*/
+
+.leaf:first-child{ left: 199px;}
+.leaf:nth-child(2){top:200px; left:200px;}
+.leaf:nth-child(3){top: 200px;}
+
+
+.transition, .transition *{-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+.dark{background: #262b2c; background: -moz-linear-gradient(top,  #262b2c 0%, #171b1b 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#262b2c), color-stop(100%,#171b1b)); background: -webkit-linear-gradient(top,  #262b2c 0%,#171b1b 100%); background: -o-linear-gradient(top,  #262b2c 0%,#171b1b 100%); background: -ms-linear-gradient(top,  #262b2c 0%,#171b1b 100%); background: linear-gradient(to bottom,  #262b2c 0%,#171b1b 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b2c', endColorstr='#171b1b',GradientType=0 ); }
+
+
+.rotate1{transform:rotate(90deg); -ms-transform:rotate(90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(90deg); -o-transform:rotate(90deg);}
+.rotate2{transform:rotate(180deg); -ms-transform:rotate(180deg); -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg); -o-transform:rotate(180deg);}
+.rotate3{transform:rotate(270deg); -ms-transform:rotate(270deg); -moz-transform:rotate(270deg); -webkit-transform:rotate(270deg); -o-transform:rotate(270deg);}
